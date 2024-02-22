@@ -70,3 +70,28 @@ else:
     add_option = input("Do you want to add a new teacher? (yes/no): ").lower()
     if add_option == "yes":
         add_teacher()
+
+
+# output
+        
+# if found
+"""        
+Enter the teacher's name to search: saleeja
+Name: saleeja      
+Age: 28
+Role: Teacher      
+Department: Science
+Salary: 50000 """
+
+# if not found
+
+"""
+Enter the teacher's name to search: sal
+Teacher with name sal not found.
+Do you want to add a new teacher? (yes/no): yes
+Enter the name: joe
+Enter the age: 23
+Enter the role: teacher
+Enter the department: ece 
+Enter the salary: 50000
+Teacher joe added successfully!"""
