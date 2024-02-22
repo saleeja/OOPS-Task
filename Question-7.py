@@ -6,15 +6,15 @@ class Student:
     def __init__(self, name, score):
         self.name = name
         self.score = score
-        self.grade, self.congrats_message = self.calculate_grade()
+        self.grade, self.congrats_message = self.calculate_grade()  # Calculate grade and get congrats message
 
     def calculate_grade(self):
-        if not self.score.isdigit():
+        if not self.score.isdigit():   # Check if the entered score is a valid integer
             print("Invalid input for score. Please enter a valid integer.")
             return "INVALID", ""
 
         score_value = int(self.score)
-
+         # Check if the score is greater than 100
         if score_value > 100:
             print("Invalid score.")
             return "INVALID", ""
@@ -33,7 +33,7 @@ class Student:
             return "C", "You've passed. Work on improvement for a better grade next time."
         else:
             return "FAILED", "Sorry, you've failed. Better luck next time."
-
+ # Method to display student details
     def display(self):
         print(f"Student Name: {self.name}")
         print(f"Student Score: {self.score}")

@@ -6,15 +6,22 @@ And also define a method called 'display' in the Student class - which, when cal
 
 
 class Student:
-    def __init__(self,name,score) -> None:
-        self.name=name
-        self.score=score
+    def __init__(self, name, score):
+        self.name = name
+        self.score = score
 
     def display(self):
-        print(f"Name:{self.name} ")
-        print(f"Score:{self.score} ")
-student1=Student(name="saleeja",score=90)
-student2=Student(name="saleeja",score=90)
+        # Method to display the name and score of the student
+        print(f"Student Name: {self.name}")
+        print(f"Student Score: {self.score}")
 
+# Creating two instances of the Student class
+student1 = Student(name="sali", score=85)
+student2 = Student(name="saleeja", score=92)
+
+# Displaying details of the first and second student 
+print("Details of Student 1:")
 student1.display()
+
+print("\nDetails of Student 2:")
 student2.display()

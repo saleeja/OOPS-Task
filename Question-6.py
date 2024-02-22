@@ -17,14 +17,14 @@ class Student:
 
     def calculate_grade(self):
         while True:
-            if not self.score.isdigit():
+            if not self.score.isdigit(): # Check if the entered score is a valid integer
                 print("Invalid input for score. Please enter a valid integer.")
                 return "INVALID"
                 break
         
             else:
                 score_value = int(self.score)
-                
+                 # Check if the score is greater than 100
                 if score_value > 100:
                     print("Invalid score.")
                     return "INVALID" ,""
@@ -43,7 +43,7 @@ class Student:
                     return "C" ,"You've passed. Work on improvement for a better grade next time."
                 else:
                     return "FAILED" , "Sorry, you've failed. Better luck next time."
-
+ # Method to display student details
     def display(self):
         print(f"Name: {self.name}")
         print(f"Score: {self.score}")
